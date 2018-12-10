@@ -24,7 +24,10 @@ A project related to how to configure a terraform meta-parameter `count`
 
   > NOTE: The command will require an execution confirmation either with `yes` or `no`.        
   
-- After positive confirmation and succesfully finished process, you will notice 
+- After positive confirmation and succesfully finished process, you will notice based on the `count` parameter integer
+  in this case  "2", two `null_resource.web` instances will be created with similar output:
+  
+   `null_resource.web[1]: Refreshing state... (ID: 5083447139221252582)`
   
    
 - After you finish, you can destroy your currect infrastructure by `terraform destroy`
